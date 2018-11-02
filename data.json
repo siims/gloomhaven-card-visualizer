@@ -1,0 +1,144 @@
+{
+  "cards": [
+    {
+      "name": "Backstab",
+      "level": "1",
+      "imgUrl": "https://cf.geekdo-images.com/medium/img/n8ACKI5gxo_qMwvuI4mOmkfVac0=/fit-in/500x500/filters:no_upscale()/pic4040329.jpg"
+    },
+    {
+      "name": "Smoke Bomb",
+      "level": "1",
+      "imgUrl": "https://cf.geekdo-images.com/medium/img/maFcOuCX-fCwK8wd2ehMMQlB6Kc=/fit-in/500x500/filters:no_upscale()/pic4040328.jpg"
+    },
+    {
+      "name": "Single Out",
+      "level": "1",
+      "imgUrl": "https://cf.geekdo-images.com/medium/img/74xySVrNHdcz9KcZgMqvjQ0_M0E=/fit-in/500x500/filters:no_upscale()/pic4040326.jpg"
+    },
+    {
+      "name": "Thief's Knack",
+      "level": "1",
+      "imgUrl": "https://cf.geekdo-images.com/medium/img/bAQ2x_bdk4l9Q2AurxAy1y1zsCc=/fit-in/500x500/filters:no_upscale()/pic4040330.jpg"
+    },
+    {
+      "name": "Flanking Strike",
+      "level": "1",
+      "imgUrl": "https://cf.geekdo-images.com/medium/img/9CpnMkWvDYfJTl3iry1CZnRQwZ4=/fit-in/500x500/filters:no_upscale()/pic4040327.jpg"
+    },
+    {
+      "name": "Venom Shiv",
+      "level": "1",
+      "imgUrl": "https://cf.geekdo-images.com/medium/img/smXaLwP5FlwwvRmqnzZgR2qQKL4=/fit-in/500x500/filters:no_upscale()/pic4040331.jpg"
+    },
+    {
+      "name": "Throwing Knives",
+      "level": "1",
+      "imgUrl": "https://cf.geekdo-images.com/medium/img/WI3uQiqtTGb_iHXK2Uob28JuP2M=/fit-in/500x500/filters:no_upscale()/pic4040332.jpg"
+    },
+    {
+      "name": "Quick Hands",
+      "level": "1",
+      "imgUrl": "https://cf.geekdo-images.com/medium/img/svFndmyC1g_wUK2Z2NX7x6J3KxA=/fit-in/500x500/filters:no_upscale()/pic4040333.jpg"
+    },
+    {
+      "name": "Special Mixture",
+      "level": "1",
+      "imgUrl": "https://cf.geekdo-images.com/medium/img/agR20NXTueDLtOkXAw9k2ffu024=/fit-in/500x500/filters:no_upscale()/pic4040334.jpg"
+    },
+    {
+      "name": "Sinister Opportunity",
+      "level": "X",
+      "imgUrl": "https://cf.geekdo-images.com/medium/img/HS6agGc49MXQdlwth-dyouHSVco=/fit-in/500x500/filters:no_upscale()/pic4040336.jpg"
+    },
+    {
+      "name": "Trickster Reversal",
+      "level": "X",
+      "imgUrl": "https://cf.geekdo-images.com/medium/img/qU35oBZiQauRLkU0I6Tek2K24FY=/fit-in/500x500/filters:no_upscale()/pic4040337.jpg"
+    },
+    {
+      "name": "Swift Bow",
+      "level": "X",
+      "imgUrl": "https://cf.geekdo-images.com/medium/img/EB1QFDLWH7W45OGOxi5AQz-G1ew=/fit-in/500x500/filters:no_upscale()/pic4040338.jpg"
+    },
+    {
+      "name": "Open Wounds",
+      "level": "2",
+      "imgUrl": "https://cf.geekdo-images.com/medium/img/gZGXfnq2sxfhOkCrlh0KE-JVfKY=/fit-in/500x500/filters:no_upscale()/pic4040374.jpg"
+    },
+    {
+      "name": "Flint Lock",
+      "level": "2",
+      "imgUrl": "https://cf.geekdo-images.com/medium/img/SpN6E5kj5-L72ekZDHFxPxk0pWI=/fit-in/500x500/filters:no_upscale()/pic4040375.jpg"
+    },
+    {
+      "name": "Hidden Daggers",
+      "level": "3",
+      "imgUrl": "https://cf.geekdo-images.com/medium/img/KRlRytMNRk1blLfT_hxid5khRDw=/fit-in/500x500/filters:no_upscale()/pic4040376.jpg"
+    },
+    {
+      "name": "Duelist's Advantage",
+      "level": "3",
+      "imgUrl": "https://cf.geekdo-images.com/medium/img/nJJeNVx4ooLc1dMy9lToZzQg6Os=/fit-in/500x500/filters:no_upscale()/pic4040377.jpg"
+    },
+    {
+      "name": "Flurry of Blades",
+      "level": "4",
+      "imgUrl": "https://cf.geekdo-images.com/medium/img/UV2-kbxb4UVvSPzh3tzM_Ts6fXs=/fit-in/500x500/filters:no_upscale()/pic4040378.jpg"
+    },
+    {
+      "name": "Gruesome Advantage",
+      "level": "4",
+      "imgUrl": "https://cf.geekdo-images.com/medium/img/FaEYwb3V3d1-0y9JeaA1z08XzkM=/fit-in/500x500/filters:no_upscale()/pic4040379.jpg"
+    },
+    {
+      "name": "Cull the Weak",
+      "level": "5",
+      "imgUrl": "https://cf.geekdo-images.com/medium/img/TUze2MEUspm0_tABJEglVqtwjZs=/fit-in/500x500/filters:no_upscale()/pic4040380.jpg"
+    },
+    {
+      "name": "Visage of Inevitable",
+      "level": "5",
+      "imgUrl": "https://cf.geekdo-images.com/medium/img/ewjo-2pq3YxuwScMErn4ilx8NM0=/fit-in/500x500/filters:no_upscale()/pic4040382.jpg"
+    },
+    {
+      "name": "Crippling Poison",
+      "level": "6",
+      "imgUrl": "https://cf.geekdo-images.com/medium/img/fxY-Es6njOhJ98zmXMeN57KNfBg=/fit-in/500x500/filters:no_upscale()/pic4040383.jpg"
+    },
+    {
+      "name": "Burning Oil",
+      "level": "6",
+      "imgUrl": "https://cf.geekdo-images.com/medium/img/lsBFnoreK9N2q09zhOxjyOpJoYA=/fit-in/500x500/filters:no_upscale()/pic4040384.jpg"
+    },
+    {
+      "name": "Stick to the Shadows",
+      "level": "7",
+      "imgUrl": "https://cf.geekdo-images.com/medium/img/uy-sitnMBARBzyrEtCMPOdcrRpg=/fit-in/500x500/filters:no_upscale()/pic4040385.jpg"
+    },
+    {
+      "name": "Spring the Trap",
+      "level": "7",
+      "imgUrl": "https://cf.geekdo-images.com/medium/img/-yx6qTtl02x5TY9RCPHhIqMoiiE=/fit-in/500x500/filters:no_upscale()/pic4040386.jpg"
+    },
+    {
+      "name": "Stiletto Storm",
+      "level": "8",
+      "imgUrl": "https://cf.geekdo-images.com/medium/img/ufLf5P-Q896Wmqf6G19VMKicIJo=/fit-in/500x500/filters:no_upscale()/pic4040387.jpg"
+    },
+    {
+      "name": "Pain's End",
+      "level": "8",
+      "imgUrl": "https://cf.geekdo-images.com/medium/img/lSyBvE6EPaBmUsru_ZqW7z_XZno=/fit-in/500x500/filters:no_upscale()/pic4040388.jpg"
+    },
+    {
+      "name": "Long Con",
+      "level": "9",
+      "imgUrl": "https://cf.geekdo-images.com/medium/img/MZ5yfNfcCQyxr-TwboDM14cdTxM=/fit-in/500x500/filters:no_upscale()/pic4040389.jpg"
+    },
+    {
+      "name": "Watch It Burn",
+      "level": "9",
+      "imgUrl": "https://cf.geekdo-images.com/medium/img/_A-MIFXJ9JPQqW7YpWBRGVu0lc0=/fit-in/500x500/filters:no_upscale()/pic4040390.jpg"
+    }
+  ]
+}
