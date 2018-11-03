@@ -8,7 +8,7 @@ app.all('*', function(req, res, next) {
     next();
 });
 
-app.get('/scoundrel', (req, res) => {
+app.get('/cards', (req, res) => {
     res.setHeader('Content-Type', 'application/json');
     res.send(data);
 });

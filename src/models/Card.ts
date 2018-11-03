@@ -1,8 +1,12 @@
-import {observable} from "mobx";
+import {computed, observable} from "mobx";
 
 export class Card {
-    name?: string;
+    @observable name?: string;
     level?: string;
-    imgUrl?: string;
     @observable selected: boolean = false;
+
+    @computed
+    get imgUrl(): string {
+        return `/static/images/cards/${this.name}.jpg`;
+    }
 }

@@ -9,7 +9,7 @@ export class CharacterDataStore {
     public loadCharacterData() {
         if (this.notStartedLoading) {
             this.notStartedLoading = false;
-            fetch("http://localhost:3003/scoundrel")
+            fetch("http://localhost:3003/cards")
                 .then((response) => {
                     return response.json();
                 })
@@ -33,7 +33,6 @@ export class CharacterDataStore {
             let newCard = new Card();
             newCard.name = item.name;
             newCard.level = item.level;
-            newCard.imgUrl = item.imgUrl;
             data.push(newCard);
         });
         return data;
