@@ -1,11 +1,10 @@
 import React, {Component} from 'react';
 import {inject, observer} from "mobx-react";
+import {CharacterDataStore} from "../stores/CharacterDataStore";
+import {ApiService} from "../services/ApiService";
 import "./AllCardsView.css";
 import Paper from "@material-ui/core/es/Paper/Paper";
-import Slider from '@material-ui/lab/Slider';
-import {CharacterDataStore} from "../stores/CharacterDataStore";
 import Spinner from "./Spinner";
-import {ApiService} from "../services/ApiService";
 import Typography from "@material-ui/core/es/Typography/Typography";
 
 interface IAllCardsViewProps {
@@ -28,15 +27,15 @@ class AllCardsView extends Component<IAllCardsViewProps> {
         return (
             <React.Fragment>
                 <Paper style={{margin: "1rem", padding: "1rem"}}>
-                    <Typography id="level-slider-label">Level {store.level}</Typography>
-                    <Slider
-                        aria-labelledby="level-slider-label"
+                    <Typography>Level {store.level}</Typography>
+                    <input
+                        type="range"
                         value={store.level}
                         min={1}
                         max={9}
                         step={1}
                         onChange={store.changeLevel}
-                        style={{padding: "1rem", width: "12rem"}}
+                        style={{width: "15rem", height: "1rem"}}
                     />
                 </Paper>
                 <Paper>

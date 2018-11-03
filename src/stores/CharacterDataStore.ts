@@ -12,7 +12,13 @@ export class CharacterDataStore {
     public loadCharacterData() {
         if (this.notStartedLoading) {
             this.notStartedLoading = false;
-            fetch("http://localhost:3003/cards")
+            let url: string;
+            if (process.env.NODE_ENV === "development") {
+                url = "http://localhost:3003/cards";
+            } else {
+                url = "/cards";
+            }
+            fetch(url)
                 .then((response) => {
                     return response.json();
                 })
@@ -64,8 +70,9 @@ export class CharacterDataStore {
     }
 
     @action.bound
-    public changeLevel(event: ChangeEvent<{}>, newLevel: number) {
-        this.level = newLevel;
+    public changeLevel(event: ChangeEvent<{}>) {
+        // @ts-ignore
+        this.level = Number(event.target.value);
         localStorage.setItem('level', String(this.level))
     }
 }
