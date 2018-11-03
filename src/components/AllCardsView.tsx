@@ -6,6 +6,7 @@ import "./AllCardsView.css";
 import Paper from "@material-ui/core/es/Paper/Paper";
 import Spinner from "./Spinner";
 import Typography from "@material-ui/core/es/Typography/Typography";
+import Button from "@material-ui/core/es/Button/Button";
 
 interface IAllCardsViewProps {
     characterDataStore?: CharacterDataStore;
@@ -27,6 +28,8 @@ class AllCardsView extends Component<IAllCardsViewProps> {
         return (
             <React.Fragment>
                 <Paper style={{margin: "1rem", padding: "1rem"}}>
+                    <Button onClick={() => store.setSelectedCharacter("elementalist")}>Elementalist</Button>
+                    <Button onClick={() => store.setSelectedCharacter("scoundrel")}>Scoundrel</Button>
                     <Typography>Level {store.level}</Typography>
                     <input
                         type="range"

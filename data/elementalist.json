@@ -1,0 +1,57 @@
+{
+  "type": "elementalist",
+  "cards": [
+    {
+      "name": "Termulant Cyclone",
+      "level": "1"
+    },
+    {
+      "name": "Stroking Hail",
+      "level": "1"
+    },
+    {
+      "name": "Shaping the Ether",
+      "level": "1"
+    },
+    {
+      "name": "Raw Enhancement",
+      "level": "1"
+    },
+    {
+      "name": "Pure Augmentation",
+      "level": "1"
+    },
+    {
+      "name": "Lava Eruption",
+      "level": "1"
+    },
+    {
+      "name": "Infernal Vortex",
+      "level": "1"
+    },
+    {
+      "name": "Ice Spikes",
+      "level": "1"
+    },
+    {
+      "name": "Frigid Torrent",
+      "level": "1"
+    },
+    {
+      "name": "Formless Power",
+      "level": "1"
+    },
+    {
+      "name": "Malleable Evocation",
+      "level": "X"
+    },
+    {
+      "name": "Encompassing Shadow",
+      "level": "X"
+    },
+    {
+      "name": "Brilliant Flash",
+      "level": "X"
+    }
+  ]
+}

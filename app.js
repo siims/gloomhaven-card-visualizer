@@ -1,6 +1,23 @@
 const express = require('express');
 const app = express();
-const data = require('./data.json');
+const fs = require('fs');
+
+const data = {};
+
+fs.readdir("data", function( err, files ) {
+    if( err ) {
+        console.error( "Could not get data.", err );
+        process.exit( 1 );
+    }
+
+    files.forEach(function( file, index ) {
+        fs.readFile("data/" + file,  (err, rawCharacterData) => {
+            if (err) throw err;
+            let jsonData = JSON.parse(rawCharacterData);
+            data[jsonData.type] = jsonData;
+        });
+    });
+});
 
 app.all('*', function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
@@ -10,7 +27,7 @@ app.all('*', function(req, res, next) {
 
 app.get('/cards', (req, res) => {
     res.setHeader('Content-Type', 'application/json');
-    res.send(data);
+    res.send(data[req.query.character]);
 });
 
 app.use(express.static(__dirname + '/build'));
