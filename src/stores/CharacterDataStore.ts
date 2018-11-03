@@ -1,8 +1,10 @@
 import {action, computed, observable} from "mobx"
 import {Card} from "../models/Card";
 import {ApiService} from "../services/ApiService";
+import {ChangeEvent} from "react";
 
 export class CharacterDataStore {
+    @observable public level: number = 1;
     @observable public rawCards: Card[] = [];
     @observable public finished: boolean = false;
     private notStartedLoading: boolean = true;
@@ -23,8 +25,18 @@ export class CharacterDataStore {
     }
 
     @computed
+    public get availableCards(): Card[] {
+        return this.rawCards.filter((card) => {
+            if (card.level === "X") {
+                return true;
+            }
+            return Number(card.level) <= this.level;
+        });
+    }
+
+    @computed
     public get selectedCards(): Card[] {
-            return this.rawCards.filter((val) => val.selected);
+        return this.rawCards.filter((val) => val.selected);
     }
 
     private transformToCards(rawJsonData: any): Card[] {
@@ -49,5 +61,10 @@ export class CharacterDataStore {
                 card.selected = !card.selected;
             }
         })
+    }
+
+    @action.bound
+    changeLevel(event: ChangeEvent<{}>, newLevel: number) {
+        this.level = newLevel;
     }
 }
