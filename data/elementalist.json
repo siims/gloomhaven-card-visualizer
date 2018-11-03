@@ -52,6 +52,70 @@
     {
       "name": "Brilliant Flash",
       "level": "X"
+    },
+    {
+      "name": "Boiling Arc",
+      "level": "2"
+    },
+    {
+      "name": "Crystallizing Blast",
+      "level": "2"
+    },
+    {
+      "name": "Burial",
+      "level": "3"
+    },
+    {
+      "name": "Chain Lightning",
+      "level": "3"
+    },
+    {
+      "name": "Gravel Vortex",
+      "level": "4"
+    },
+    {
+      "name": "Primal Duality",
+      "level": "4"
+    },
+    {
+      "name": "Obsidian Shards",
+      "level": "5"
+    },
+    {
+      "name": "Winter's Edge",
+      "level": "5"
+    },
+    {
+      "name": "Eye of the Hurricane",
+      "level": "6"
+    },
+    {
+      "name": "Simulaerum",
+      "level": "6"
+    },
+    {
+      "name": "Pragmatic Reinforcement",
+      "level": "7"
+    },
+    {
+      "name": "Vengeance",
+      "level": "7"
+    },
+    {
+      "name": "Elemental Aegis",
+      "level": "8"
+    },
+    {
+      "name": "Volatile Consumption",
+      "level": "8"
+    },
+    {
+      "name": "Eternal Equilibrium",
+      "level": "9"
+    },
+    {
+      "name": "Ethereal Manifestation",
+      "level": "9"
     }
   ]
 }
