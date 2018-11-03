@@ -4,6 +4,7 @@ import "./AllCardsView.css";
 import Paper from "@material-ui/core/es/Paper/Paper";
 import {CharacterDataStore} from "../stores/CharacterDataStore";
 import Spinner from "./Spinner";
+import {ApiService} from "../services/ApiService";
 
 interface IAllCardsViewProps {
     characterDataStore?: CharacterDataStore;
@@ -24,16 +25,19 @@ class AllCardsView extends Component<IAllCardsViewProps> {
         }
         return (
             <Paper>
-                {store.rawCards.map(card => (
-                    <img
-                        src={card.imgUrl}
-                        key={card.name}
-                        alt={card.name}
-                        onClick={store.toggleSelect}
-                        style={{display: "inline", width: "10rem"}}
-                        className={card.selected ? "card-selected" : ""}
-                    />
-                ))}
+                {store.rawCards.map(card => {
+                    return (
+                        <img
+                            src={card.imgUrl}
+                            key={card.name}
+                            alt={card.name}
+                            onClick={store.toggleSelect}
+                            onError={() => {card.imgUrl = ApiService.defaultCardUrl}}
+                            style={{display: "inline", width: "10rem"}}
+                            className={card.selected ? "card-selected" : ""}
+                        />
+                    );
+                })}
             </Paper>
         );
     }

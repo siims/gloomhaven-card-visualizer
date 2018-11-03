@@ -1,12 +1,15 @@
-import {computed, observable} from "mobx";
+import {observable} from "mobx";
+import {ApiService} from "../services/ApiService";
 
 export class Card {
-    @observable name?: string;
+    name: string;
     level?: string;
     @observable selected: boolean = false;
+    @observable imgUrl: string;
 
-    @computed
-    get imgUrl(): string {
-        return `/static/images/cards/${this.name}.jpg`;
+    constructor(name: string, level?: string) {
+        this.name = name;
+        this.level = level;
+        this.imgUrl = ApiService.cardImageUrl(this.name);
     }
 }

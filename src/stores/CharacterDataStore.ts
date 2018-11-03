@@ -1,5 +1,6 @@
 import {action, computed, observable} from "mobx"
 import {Card} from "../models/Card";
+import {ApiService} from "../services/ApiService";
 
 export class CharacterDataStore {
     @observable public rawCards: Card[] = [];
@@ -30,10 +31,7 @@ export class CharacterDataStore {
         const data: Card[] = [];
         // @ts-ignore
         rawJsonData.cards.forEach((item) => {
-            let newCard = new Card();
-            newCard.name = item.name;
-            newCard.level = item.level;
-            data.push(newCard);
+            data.push(new Card(item.name, item.level));
         });
         return data;
     }
@@ -47,7 +45,7 @@ export class CharacterDataStore {
     @action.bound
     public toggleSelect(evt: any) {
         this.rawCards.forEach((card) => {
-            if (card.name === evt.target.alt) {
+            if (card.name === evt.target.alt && card.imgUrl != ApiService.defaultCardUrl) {
                 card.selected = !card.selected;
             }
         })
