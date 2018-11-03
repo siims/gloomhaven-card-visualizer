@@ -4,7 +4,7 @@ import {ApiService} from "../services/ApiService";
 import {ChangeEvent} from "react";
 
 export class CharacterDataStore {
-    @observable public level: number = 1;
+    @observable public level: number = localStorage.getItem('level') ? Number(localStorage.getItem('level')) : 1;
     @observable public rawCards: Card[] = [];
     @observable public finished: boolean = false;
     private notStartedLoading: boolean = true;
@@ -64,7 +64,8 @@ export class CharacterDataStore {
     }
 
     @action.bound
-    changeLevel(event: ChangeEvent<{}>, newLevel: number) {
+    public changeLevel(event: ChangeEvent<{}>, newLevel: number) {
         this.level = newLevel;
+        localStorage.setItem('level', String(this.level))
     }
 }
