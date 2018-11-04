@@ -7,8 +7,10 @@ import CssBaseline from "@material-ui/core/es/CssBaseline/CssBaseline";
 import {CharacterDataStore} from "./stores/CharacterDataStore";
 import AllCardsView from "./components/AllCardsView";
 import SelectedCardsView from "./components/SelectedCardsView";
+import {LocalStorageService} from "./services/LocalStorageService";
 
-const characterDataStore = new CharacterDataStore();
+const localStoreService = new LocalStorageService();
+const characterDataStore = new CharacterDataStore(localStoreService);
 const theme = createMuiTheme({
     typography: {
         useNextVariants: true
@@ -18,7 +20,7 @@ const theme = createMuiTheme({
 class App extends Component {
     public render() {
         return (
-            <Provider characterDataStore={characterDataStore}>
+            <Provider characterDataStore={characterDataStore} localStoreService={localStoreService}>
                 <MuiThemeProvider theme={theme}>
                     <CssBaseline/>
                     <AllCardsView />

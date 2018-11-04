@@ -6,7 +6,7 @@ import "./AllCardsView.css";
 import Paper from "@material-ui/core/es/Paper/Paper";
 import Spinner from "./Spinner";
 import Typography from "@material-ui/core/es/Typography/Typography";
-import Button from "@material-ui/core/es/Button/Button";
+import CharacterSelection from "./CharacterSelection";
 
 interface IAllCardsViewProps {
     characterDataStore?: CharacterDataStore;
@@ -22,17 +22,9 @@ class AllCardsView extends Component<IAllCardsViewProps> {
 
     public render() {
         const store = this.props.characterDataStore!!;
-        if (!store.finished) {
-            return <Spinner/>
-        }
         return (
             <React.Fragment>
                 <Paper style={{margin: "1rem", padding: "1rem"}}>
-                    <Button onClick={() => store.setSelectedCharacter("cragheart")}>Cragheart</Button>
-                    <Button onClick={() => store.setSelectedCharacter("elementalist")}>Elementalist</Button>
-                    <Button onClick={() => store.setSelectedCharacter("plagueherald")}>Plagueherald</Button>
-                    <Button onClick={() => store.setSelectedCharacter("quartermaster")}>Quartermaster</Button>
-                    <Button onClick={() => store.setSelectedCharacter("scoundrel")}>Scoundrel</Button>
                     <Typography>Level {store.level}</Typography>
                     <input
                         type="range"
@@ -43,23 +35,25 @@ class AllCardsView extends Component<IAllCardsViewProps> {
                         onChange={store.changeLevel}
                         style={{width: "15rem", height: "1rem"}}
                     />
+                    <CharacterSelection/>
                 </Paper>
                 <Paper>
-                    {store.availableCards.map(card => {
-                        return (
-                            <img
-                                src={card.imgUrl}
-                                key={card.name}
-                                alt={card.name}
-                                onClick={store.toggleSelect}
-                                onError={() => {
-                                    card.imgUrl = ApiService.defaultCardUrl(store.selectedCharacter)
-                                }}
-                                style={{display: "inline", width: "10rem"}}
-                                className={card.selected ? "card-selected" : ""}
-                            />
-                        );
-                    })}
+                    {!store.finished ? <Spinner/> :
+                        store.availableCards.map(card => {
+                            return (
+                                <img
+                                    src={card.imgUrl}
+                                    key={card.name}
+                                    alt={card.name}
+                                    onClick={store.toggleSelect}
+                                    onError={() => {
+                                        card.imgUrl = ApiService.defaultCardUrl(store.selectedCharacter)
+                                    }}
+                                    style={{display: "inline", width: "10rem"}}
+                                    className={card.selected ? "card-selected" : ""}
+                                />
+                            );
+                        })}
                 </Paper>
             </React.Fragment>
 

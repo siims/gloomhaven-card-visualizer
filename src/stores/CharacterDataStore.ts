@@ -3,13 +3,20 @@ import {Card} from "../models/Card";
 import {ApiService} from "../services/ApiService";
 import {ChangeEvent} from "react";
 import {Character, CharacterType} from "../models/Character";
+import {LocalStorageService} from "../services/LocalStorageService";
 
 export class CharacterDataStore {
-    // @ts-ignore
-    @observable public selectedCharacter: CharacterType = localStorage.getItem(`lastSelectedCharacter`) || "scoundrel";
+    private localStoreService: LocalStorageService;
+
+    @observable public selectedCharacter: CharacterType;
     @observable public characters: Character[] = [];
     @observable public finished: boolean = false;
     private notStartedLoading: boolean = true;
+
+    constructor(localStoreService: LocalStorageService) {
+        this.localStoreService = localStoreService;
+        this.selectedCharacter = this.localStoreService.getSelectedCharacter();
+    }
 
     public loadCharacterData() {
         if (this.notStartedLoading) {
@@ -37,6 +44,7 @@ export class CharacterDataStore {
         }
         return null;
     }
+
     @computed
     public get level(): number {
         return this.currentCharacter != null ? this.currentCharacter.level!! : 1;
@@ -45,23 +53,18 @@ export class CharacterDataStore {
 
     @computed
     public get availableCards(): Card[] {
-        return this.currentCards.filter((card) => {
-            if (card.level === "X") {
-                return true;
-            }
-            return Number(card.level) <= this.level;
-        });
+        return this.currentCards.filter(this.inLevelRange);
     }
 
     @computed
     public get selectedCards(): Card[] {
-        return this.currentCards.filter((val) => val.selected);
+        return this.currentCards.filter((val) => val.selected).filter(this.inLevelRange);
     }
 
     @action.bound
     public setSelectedCharacter(characterType: CharacterType): void {
         this.selectedCharacter = characterType;
-        localStorage.setItem(`lastSelectedCharacter`, this.selectedCharacter);
+        this.localStoreService.setSelectedCharacter(this.selectedCharacter);
         if (!this.isCharacterLoaded(characterType)) {
             this.finished = false;
             this.notStartedLoading = true;
@@ -74,25 +77,28 @@ export class CharacterDataStore {
         this.currentCards.forEach((card) => {
             if (card.name === evt.target.alt && card.imgUrl != ApiService.defaultCardUrl(this.selectedCharacter)) {
                 card.selected = !card.selected;
+                this.localStoreService.setCardSelected(this.selectedCharacter, card);
             }
-        })
+        });
     }
 
     @action.bound
     public changeLevel(event: ChangeEvent<{}>) {
         // @ts-ignore
         this.currentCharacter!!.level = Number(event.target.value);
-        localStorage.setItem(`level.${this.selectedCharacter}`, String(this.currentCharacter!!.level))
+        this.localStoreService.setCharacterLevel(this.selectedCharacter, this.currentCharacter!!.level);
     }
 
-    private transformToCharacter(rawJsonData: any): Character {
+    private transformToCharacter = (rawJsonData: any): Character => {
         const cards: Card[] = [];
+        const type: CharacterType = rawJsonData.type;
         rawJsonData.cards.forEach((item: any) => {
-            cards.push(new Card(item.name, item.level));
+            let card = new Card(item.name, item.level);
+            card.selected = this.localStoreService.getCardSelected(type, card);
+            cards.push(card);
         });
-        const type = rawJsonData.type;
-        return new Character(type, cards, localStorage.getItem(`level.${type}`));
-    }
+        return new Character(type, cards, this.localStoreService.getCharacterLevel(type));
+    };
 
     @action.bound
     private setCharacter(character: Character): void {
@@ -108,7 +114,14 @@ export class CharacterDataStore {
         return characters.length !== 1 ? [] : characters.values().next().value.cards
     }
 
-    private isCharacterLoaded(type: CharacterType) {
+    private isCharacterLoaded = (type: CharacterType) => {
         return this.characters.filter((char) => char.type === type).length === 1;
+    }
+
+    private inLevelRange = (card: Card) => {
+        if (card.level === "X") {
+            return true;
+        }
+        return Number(card.level) <= this.level;
     }
 }
