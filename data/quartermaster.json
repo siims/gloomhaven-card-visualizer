@@ -1,5 +1,6 @@
 {
   "type": "quartermaster",
+  "numOfCards": 9,
   "cards": [
     {
       "name": "Restock",

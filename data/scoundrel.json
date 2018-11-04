@@ -1,5 +1,6 @@
 {
   "type": "scoundrel",
+  "numOfCards": 9,
   "cards": [
     {
       "name": "Single Out",

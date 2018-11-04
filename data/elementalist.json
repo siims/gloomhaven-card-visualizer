@@ -1,5 +1,6 @@
 {
   "type": "elementalist",
+  "numOfCards": 10,
   "cards": [
     {
       "name": "Raw Enhancement",

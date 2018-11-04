@@ -25,16 +25,17 @@ class AllCardsView extends Component<IAllCardsViewProps> {
         return (
             <React.Fragment>
                 <Paper style={{margin: "1rem", padding: "1rem"}}>
-                    <Typography>Level {store.level}</Typography>
-                    <input
-                        type="range"
-                        value={store.level}
-                        min={1}
-                        max={9}
-                        step={1}
-                        onChange={store.changeLevel}
-                        style={{width: "15rem", height: "1rem"}}
-                    />
+                    <Typography variant={"body1"}>Level {store.level}
+                        <input
+                            type="range"
+                            value={store.level}
+                            min={1}
+                            max={9}
+                            step={1}
+                            onChange={store.changeLevel}
+                            style={{width: "15rem", height: "1rem"}}
+                        />
+                    </Typography>
                     <CharacterSelection/>
                 </Paper>
                 <Paper>

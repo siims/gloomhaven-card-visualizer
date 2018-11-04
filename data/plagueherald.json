@@ -1,5 +1,6 @@
 {
   "type": "plagueherald",
+  "numOfCards": 11,
   "cards": [
     {
       "name": "Biting Gnats",
