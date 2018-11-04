@@ -30,6 +30,7 @@ class AllCardsView extends Component<IAllCardsViewProps> {
                 <Paper style={{margin: "1rem", padding: "1rem"}}>
                     <Button onClick={() => store.setSelectedCharacter("elementalist")}>Elementalist</Button>
                     <Button onClick={() => store.setSelectedCharacter("scoundrel")}>Scoundrel</Button>
+                    <Button onClick={() => store.setSelectedCharacter("plagueherald")}>Plagueherald</Button>
                     <Typography>Level {store.level}</Typography>
                     <input
                         type="range"
