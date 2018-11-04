@@ -1,6 +1,7 @@
 {
   "name": "Gloomhaven-card-visualizer",
   "version": "1.0.0",
+  "homepage": "https://siims.github.io/gloomhaven-card-visualizer/",
   "main": "index.js",
   "license": "MIT",
   "author": "Siim Schults",
