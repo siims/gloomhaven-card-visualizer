@@ -72,7 +72,7 @@ export class CharacterDataStore {
     @action.bound
     public toggleSelect(evt: any) {
         this.currentCards.forEach((card) => {
-            if (card.name === evt.target.alt && card.imgUrl != ApiService.defaultCardUrl()) {
+            if (card.name === evt.target.alt && card.imgUrl != ApiService.defaultCardUrl(this.selectedCharacter)) {
                 card.selected = !card.selected;
             }
         })

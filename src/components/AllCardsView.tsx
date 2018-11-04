@@ -53,7 +53,7 @@ class AllCardsView extends Component<IAllCardsViewProps> {
                                 alt={card.name}
                                 onClick={store.toggleSelect}
                                 onError={() => {
-                                    card.imgUrl = ApiService.defaultCardUrl()
+                                    card.imgUrl = ApiService.defaultCardUrl(store.selectedCharacter)
                                 }}
                                 style={{display: "inline", width: "10rem"}}
                                 className={card.selected ? "card-selected" : ""}
