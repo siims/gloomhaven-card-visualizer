@@ -2,18 +2,6 @@
   "type": "elementalist",
   "cards": [
     {
-      "name": "Termulant Cyclone",
-      "level": "1"
-    },
-    {
-      "name": "Stroking Hail",
-      "level": "1"
-    },
-    {
-      "name": "Shaping the Ether",
-      "level": "1"
-    },
-    {
       "name": "Raw Enhancement",
       "level": "1"
     },
@@ -22,11 +10,27 @@
       "level": "1"
     },
     {
-      "name": "Lava Eruption",
+      "name": "Formless Power",
+      "level": "1"
+    },
+    {
+      "name": "Shaping the Ether",
+      "level": "1"
+    },
+    {
+      "name": "Stroking Hail",
+      "level": "1"
+    },
+    {
+      "name": "Tremulant Cyclone",
       "level": "1"
     },
     {
       "name": "Infernal Vortex",
+      "level": "1"
+    },
+    {
+      "name": "Lava Eruption",
       "level": "1"
     },
     {
@@ -38,19 +42,15 @@
       "level": "1"
     },
     {
-      "name": "Formless Power",
-      "level": "1"
-    },
-    {
       "name": "Malleable Evocation",
       "level": "X"
     },
     {
-      "name": "Encompassing Shadow",
+      "name": "Brilliant Flash",
       "level": "X"
     },
     {
-      "name": "Brilliant Flash",
+      "name": "Encompassing Shadow",
       "level": "X"
     },
     {
@@ -70,11 +70,11 @@
       "level": "3"
     },
     {
-      "name": "Gravel Vortex",
+      "name": "Primal Duality",
       "level": "4"
     },
     {
-      "name": "Primal Duality",
+      "name": "Gravel Vortex",
       "level": "4"
     },
     {
@@ -90,31 +90,31 @@
       "level": "6"
     },
     {
-      "name": "Simulaerum",
+      "name": "Simulacrum",
       "level": "6"
-    },
-    {
-      "name": "Pragmatic Reinforcement",
-      "level": "7"
     },
     {
       "name": "Vengeance",
       "level": "7"
     },
     {
-      "name": "Elemental Aegis",
-      "level": "8"
+      "name": "Pragmatic Reinforcement",
+      "level": "7"
     },
     {
       "name": "Volatile Consumption",
       "level": "8"
     },
     {
-      "name": "Eternal Equilibrium",
-      "level": "9"
+      "name": "Elemental Aegis",
+      "level": "8"
     },
     {
       "name": "Ethereal Manifestation",
+      "level": "9"
+    },
+    {
+      "name": "Eternal Equilibrium",
       "level": "9"
     }
   ]

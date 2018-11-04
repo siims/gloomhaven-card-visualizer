@@ -2,7 +2,11 @@
   "type": "scoundrel",
   "cards": [
     {
-      "name": "Backstab",
+      "name": "Single Out",
+      "level": "1"
+    },
+    {
+      "name": "Flanking Strike",
       "level": "1"
     },
     {
@@ -10,15 +14,11 @@
       "level": "1"
     },
     {
-      "name": "Single Out",
+      "name": "Backstab",
       "level": "1"
     },
     {
       "name": "Thief's Knack",
-      "level": "1"
-    },
-    {
-      "name": "Flanking Strike",
       "level": "1"
     },
     {
@@ -54,7 +54,7 @@
       "level": "2"
     },
     {
-      "name": "Flint Lock",
+      "name": "Flintlock",
       "level": "2"
     },
     {
