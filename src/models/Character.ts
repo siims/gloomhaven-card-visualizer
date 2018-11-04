@@ -1,7 +1,7 @@
 import {Card} from "./Card";
 import {observable} from "mobx";
 
-export type CharacterType = "elementalist" | "plagueherald" | "quartermaster" | "scoundrel";
+export type CharacterType = "elementalist" | "cragheart" | "plagueherald" | "quartermaster" | "scoundrel";
 
 export class Character {
     type: CharacterType;

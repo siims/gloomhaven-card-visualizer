@@ -1,0 +1,117 @@
+{
+  "type": "quartermaster",
+  "cards": [
+    {
+      "name": "Restock",
+      "level": "1"
+    },
+    {
+      "name": "Oversized Pack",
+      "level": "1"
+    },
+    {
+      "name": "Sharpening Kit",
+      "level": "1"
+    },
+    {
+      "name": "Proficiency",
+      "level": "1"
+    },
+    {
+      "name": "Iron Bulwark",
+      "level": "1"
+    },
+    {
+      "name": "Hastened Step",
+      "level": "1"
+    },
+    {
+      "name": "Cleaving Axe",
+      "level": "1"
+    },
+    {
+      "name": "Impaling Spear",
+      "level": "1"
+    },
+    {
+      "name": "Crippling Bow",
+      "level": "1"
+    },
+    {
+      "name": "Crushing Hammer",
+      "level": "X"
+    },
+    {
+      "name": "Scroll of Recall",
+      "level": "X"
+    },
+    {
+      "name": "Reserved Energy",
+      "level": "X"
+    },
+    {
+      "name": "Reforge",
+      "level": "2"
+    },
+    {
+      "name": "Bladed boomerang",
+      "level": "2"
+    },
+    {
+      "name": "Continual Supply",
+      "level": "3"
+    },
+    {
+      "name": "Scroll of Lightning",
+      "level": "3"
+    },
+    {
+      "name": "Side Pouch",
+      "level": "4"
+    },
+    {
+      "name": "Giant Club",
+      "level": "4"
+    },
+    {
+      "name": "Reinforced Steel",
+      "level": "5"
+    },
+    {
+      "name": "Scroll of Judgment",
+      "level": "5"
+    },
+    {
+      "name": "Catastrophic Bomb",
+      "level": "6"
+    },
+    {
+      "name": "Quiver of Arrows",
+      "level": "6"
+    },
+    {
+      "name": "Scroll of Blizzards",
+      "level": "7"
+    },
+    {
+      "name": "Refreshment",
+      "level": "7"
+    },
+    {
+      "name": "Portable Ballista",
+      "level": "8"
+    },
+    {
+      "name": "Fortified Position",
+      "level": "8"
+    },
+    {
+      "name": "Scroll of Annihilation",
+      "level": "9"
+    },
+    {
+      "name": "Bag of Holding",
+      "level": "9"
+    }
+  ]
+}

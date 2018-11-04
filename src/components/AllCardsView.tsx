@@ -28,9 +28,11 @@ class AllCardsView extends Component<IAllCardsViewProps> {
         return (
             <React.Fragment>
                 <Paper style={{margin: "1rem", padding: "1rem"}}>
+                    <Button onClick={() => store.setSelectedCharacter("cragheart")}>Cragheart</Button>
                     <Button onClick={() => store.setSelectedCharacter("elementalist")}>Elementalist</Button>
-                    <Button onClick={() => store.setSelectedCharacter("scoundrel")}>Scoundrel</Button>
                     <Button onClick={() => store.setSelectedCharacter("plagueherald")}>Plagueherald</Button>
+                    <Button onClick={() => store.setSelectedCharacter("quartermaster")}>Quartermaster</Button>
+                    <Button onClick={() => store.setSelectedCharacter("scoundrel")}>Scoundrel</Button>
                     <Typography>Level {store.level}</Typography>
                     <input
                         type="range"
