@@ -2,6 +2,8 @@ const express = require('express');
 const app = express();
 const fs = require('fs');
 
+app.set('x-powered-by', false);
+
 const data = {};
 
 fs.readdir("data", function( err, files ) {
