@@ -24,26 +24,7 @@ export class CharacterDataStore {
         this.selectedCharacter = this.localStoreService.getSelectedCharacter();
     }
 
-    // public loadCharacterData() {
-    //     if (this.notStartedLoading) {
-    //         this.notStartedLoading = false;
-    //         let url: string = "/cards?character=" + this.selectedCharacter;
-    //         if (process.env.NODE_ENV === "development") {
-    //             url = "http://localhost:3003" + url;
-    //         }
-    //         fetch(url)
-    //             .then((response) => {
-    //                 return response.json();
-    //             })
-    //             .then(this.transformToCharacter)
-    //             .then(this.setCharacter)
-    //             .catch((reason) => {
-    //                 console.error("Failed to load response from backend. Is backend up?", reason);
-    //             });
-    //     }
-    // }
-
-    public loadCharacterData = () => { // not using backend
+    public loadCharacterData = () => {
         if (this.notStartedLoading) {
             this.notStartedLoading = false;
             this.setCharacter(this.transformToCharacter(cragheartData));
