@@ -35,5 +35,17 @@ npm run start
    * rename all cards to have card's name
 6. copy images to `public/static/images/cards/`
 7. that is all, enjoy!
+#### Github pages
+There is a separate branch `gh-pages` that is served by github. Updating goes in 7 steps:
+```
+git checkout gh-pages
+git merge master # have latest state
+npm run build
+rm -r static/ # cleanup previous build files
+rsync -a build/* . # make page available on root, not under build
+git add -A .
+git commit -m "github pages build update"
+git push origin gh-pages
+```
 ### Thanks
 @saizai for work with gloomhaven [tabletop simulator assets](https://github.com/saizai/gloomhaven_tts) (https://drive.google.com/drive/folders/1SiXb3u2mJbN-Dg2j3Rb-y5amnRJSXIDc) - I never would have bothered to do media processing.
