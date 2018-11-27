@@ -71,36 +71,46 @@ export class CharacterDataStore {
     }
 
     @action.bound
-    public toggleToFromScenarioDeck(evt: any, cardName: string): void {
+    public toggleToFromScenarioDeck(card: Card): void {
 
-        this.currentCards.forEach((card) => {
-            if (card.name === cardName
-                && card.inPlayerDeck
-                && card.imgUrl != ApiService.defaultCardUrl(this.selectedCharacter)
-            ) {
-
-                if (this.maxCardsHaveBeenSelected(card)) {
-                    alert(`You have selected maximum amount of cards for your character.\n\n
+        if (card.inPlayerDeck && card.imgUrl != ApiService.defaultCardUrl(this.selectedCharacter)) {
+            if (this.maxCardsHaveBeenSelected(card)) {
+                alert(`You have selected maximum amount of cards for your character.\n\n
                         ${this.capitalize(this.selectedCharacter)} can hold ${this.currentCharacter!!.numOfCards} cards.`);
-                    return;
-                }
-                card.inScenarioDeck = !card.inScenarioDeck;
-                this.localStoreService.setCardInScenarioDeckState(this.selectedCharacter, card);
+                return;
             }
-        });
+            card.inScenarioDeck = !card.inScenarioDeck;
+            this.localStoreService.setCardInScenarioDeckState(this.selectedCharacter, card);
+        }
     }
 
     @action.bound
-    public toggleToFromPlayerDeck(evt: any, cardName: string): void {
+    public toggleToFromPlayerDeck(currentCard: Card): void {
+        const isAddingCard = !currentCard.inPlayerDeck;
+        const playerCardCount = this.currentCards.filter((card) => card.inPlayerDeck).length;
+        const levelOneCards = this.currentCards.filter((card) => Card.alwaysInPlayerDeck(card)).length;
+        const currentLevel = this.currentCharacter!.level;
+        const allowedCardAmount = levelOneCards + (currentLevel - 1);
+        const numberOfLastLevelCardsSelected = this.countCardsInPlayerDeck(currentLevel);
+        const numberOfPreviousLevelCardsSelected = this.countCardsInPlayerDeck(currentLevel - 1);
 
-        this.currentCards.forEach((card) => {
-            if (card.name === cardName) {
-                card.inPlayerDeck = !card.inPlayerDeck;
-                card.inScenarioDeck = false;
-                this.localStoreService.setCardInPlayerDeckState(this.selectedCharacter, card);
-                this.localStoreService.setCardInScenarioDeckState(this.selectedCharacter, card);
-            }
-        });
+        if (isAddingCard && playerCardCount === allowedCardAmount) {
+            alert("You have selected all card allowed. Remove a card from your player deck first.");
+            return;
+        }
+        if (isAddingCard && Number(currentCard.level) === currentLevel && (numberOfLastLevelCardsSelected === 1 || numberOfPreviousLevelCardsSelected === 2)) {
+            alert("Cannot select two cards of current level nor card from current level when two previous level cards are selected.");
+            return;
+        }
+        if (isAddingCard && Number(currentCard.level) === currentLevel - 1 && numberOfLastLevelCardsSelected === 1 && numberOfPreviousLevelCardsSelected === 1) {
+            alert("Cannot select two cards of previous level when one card is selected from last level.");
+            return;
+        }
+
+        currentCard.inPlayerDeck = !currentCard.inPlayerDeck;
+        currentCard.inScenarioDeck = false;
+        this.localStoreService.setCardInPlayerDeckState(this.selectedCharacter, currentCard);
+        this.localStoreService.setCardInScenarioDeckState(this.selectedCharacter, currentCard);
     }
 
     @action.bound
@@ -153,4 +163,8 @@ export class CharacterDataStore {
     private capitalize = (word: string): string => {
         return word[0].toUpperCase() + word.slice(1);
     };
+
+    private countCardsInPlayerDeck(level: number): number {
+        return this.currentCards.filter((card) => Number(card.level) === level && card.inPlayerDeck).length;
+    }
 }

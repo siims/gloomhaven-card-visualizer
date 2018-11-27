@@ -52,14 +52,14 @@ class AllCardsView extends Component<IAllCardsViewProps> {
                                     <img
                                         src={card.imgUrl}
                                         alt={card.name}
-                                        onClick={(evt) => store.toggleToFromScenarioDeck(evt, card.name)}
+                                        onClick={() => store.toggleToFromScenarioDeck(card)}
                                         onError={() => {
                                             card.imgUrl = ApiService.defaultCardUrl(store.selectedCharacter)
                                         }}
                                         className={cardImageClasses}
                                     />
                                     <IconButton
-                                        onClick={(evt) => store.toggleToFromPlayerDeck(evt, card.name)}
+                                        onClick={() => store.toggleToFromPlayerDeck(card)}
                                         className={"card-to-from-player-deck"}
                                         aria-label="Toggle to-from player deck"
                                         style={{display: Card.alwaysInPlayerDeck(card) ? "none": "initial"}}
