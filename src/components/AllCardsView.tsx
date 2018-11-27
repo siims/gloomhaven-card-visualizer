@@ -8,8 +8,8 @@ import Spinner from "./Spinner";
 import Typography from "@material-ui/core/es/Typography/Typography";
 import CharacterSelection from "./CharacterSelection";
 import IconButton from "@material-ui/core/es/IconButton/IconButton";
-import SwapVertIcon from '@material-ui/icons/SwapVert';
 import {Card} from "../models/Card";
+import {DeleteForever, LibraryAdd} from "@material-ui/icons";
 
 interface IAllCardsViewProps {
     characterDataStore?: CharacterDataStore;
@@ -52,7 +52,7 @@ class AllCardsView extends Component<IAllCardsViewProps> {
                                     <img
                                         src={card.imgUrl}
                                         alt={card.name}
-                                        onClick={store.toggleToFromScenarioDeck}
+                                        onClick={(evt) => store.toggleToFromScenarioDeck(evt, card.name)}
                                         onError={() => {
                                             card.imgUrl = ApiService.defaultCardUrl(store.selectedCharacter)
                                         }}
@@ -64,7 +64,8 @@ class AllCardsView extends Component<IAllCardsViewProps> {
                                         aria-label="Toggle to-from player deck"
                                         style={{display: Card.alwaysInPlayerDeck(card) ? "none": "initial"}}
                                     >
-                                        <SwapVertIcon/>
+                                        <LibraryAdd style={{display: card.inPlayerDeck ? "none" : "initial"}}/>
+                                        <DeleteForever style={{display: !card.inPlayerDeck ? "none" : "initial"}}/>
                                     </IconButton>
                                 </div>
                             );

@@ -71,10 +71,13 @@ export class CharacterDataStore {
     }
 
     @action.bound
-    public toggleToFromScenarioDeck(evt: any): void {
+    public toggleToFromScenarioDeck(evt: any, cardName: string): void {
 
         this.currentCards.forEach((card) => {
-            if (card.name === evt.target.alt && card.imgUrl != ApiService.defaultCardUrl(this.selectedCharacter)) {
+            if (card.name === cardName
+                && card.inPlayerDeck
+                && card.imgUrl != ApiService.defaultCardUrl(this.selectedCharacter)
+            ) {
 
                 if (this.maxCardsHaveBeenSelected(card)) {
                     alert(`You have selected maximum amount of cards for your character.\n\n
