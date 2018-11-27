@@ -27,7 +27,7 @@ class SelectedCardsView extends Component<ISelectedCardsViewProps> {
                         src={card.imgUrl}
                         key={card.name}
                         alt={card.name}
-                        onClick={store.toggleSelect}
+                        onClick={store.toggleToFromScenarioDeck}
                         style={{display: "inline", width: "12rem"}}
                     />
                 ))}

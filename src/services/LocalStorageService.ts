@@ -3,12 +3,12 @@ import {Card} from "../models/Card";
 
 export class LocalStorageService {
 
-    public setCardSelected(characterType: CharacterType, card: Card): void {
-        localStorage.setItem(`selectedCard.${characterType}.${card.name}`, String(card.selected));
+    public setCardInScenarioDeckState(characterType: CharacterType, card: Card): void {
+        localStorage.setItem(`scenarioDeck.${characterType}.${card.name}`, String(card.inScenarioDeck));
     }
 
-    public getCardSelected(characterType: CharacterType, card: Card): boolean {
-        let value = localStorage.getItem(`selectedCard.${characterType}.${card.name}`);
+    public getCardInScenarioDeckState(characterType: CharacterType, cardName: string): boolean {
+        let value = localStorage.getItem(`scenarioDeck.${characterType}.${cardName}`);
         return value != null ? (value === "true") : false;
     }
 
@@ -28,5 +28,14 @@ export class LocalStorageService {
 
     public setCharacterLevel(characterType: CharacterType, level: number) {
         localStorage.setItem(`level.${characterType}`, String(level));
+    }
+
+    public setCardInPlayerDeckState(characterType: CharacterType, card: Card) {
+        localStorage.setItem(`playerDeck.${characterType}.${card.name}`, String(card.inPlayerDeck));
+    }
+
+    public getCardInPlayerDeckState(characterType: CharacterType, cardName: string): boolean {
+        let value = localStorage.getItem(`playerDeck.${characterType}.${cardName}`);
+        return value != null ? (value === "true") : false;
     }
 }

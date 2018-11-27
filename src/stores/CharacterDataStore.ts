@@ -56,7 +56,7 @@ export class CharacterDataStore {
 
     @computed
     public get selectedCards(): Card[] {
-        return this.currentCards.filter((val) => val.selected).filter(this.inLevelRange);
+        return this.currentCards.filter((val) => val.inScenarioDeck).filter(this.inLevelRange);
     }
 
     @action.bound
@@ -71,7 +71,7 @@ export class CharacterDataStore {
     }
 
     @action.bound
-    public toggleSelect(evt: any): void {
+    public toggleToFromScenarioDeck(evt: any): void {
 
         this.currentCards.forEach((card) => {
             if (card.name === evt.target.alt && card.imgUrl != ApiService.defaultCardUrl(this.selectedCharacter)) {
@@ -81,8 +81,19 @@ export class CharacterDataStore {
                         ${this.capitalize(this.selectedCharacter)} can hold ${this.currentCharacter!!.numOfCards} cards.`);
                     return;
                 }
-                card.selected = !card.selected;
-                this.localStoreService.setCardSelected(this.selectedCharacter, card);
+                card.inScenarioDeck = !card.inScenarioDeck;
+                this.localStoreService.setCardInScenarioDeckState(this.selectedCharacter, card);
+            }
+        });
+    }
+
+    @action.bound
+    public toggleToFromPlayerDeck(evt: any, cardName: string): void {
+
+        this.currentCards.forEach((card) => {
+            if (card.name === cardName) {
+                card.inPlayerDeck = !card.inPlayerDeck;
+                this.localStoreService.setCardInPlayerDeckState(this.selectedCharacter, card);
             }
         });
     }
@@ -98,8 +109,8 @@ export class CharacterDataStore {
         const cards: Card[] = [];
         const type: CharacterType = rawJsonData.type;
         rawJsonData.cards.forEach((item: any) => {
-            let card = new Card(item.name, item.level);
-            card.selected = this.localStoreService.getCardSelected(type, card);
+            let cardName = item.name;
+            let card = new Card(cardName, item.level, this.localStoreService.getCardInPlayerDeckState(type, cardName), this.localStoreService.getCardInScenarioDeckState(type, cardName));
             cards.push(card);
         });
         return new Character(type, cards, this.localStoreService.getCharacterLevel(type), rawJsonData.numOfCards);
@@ -116,7 +127,7 @@ export class CharacterDataStore {
     private get currentCards() {
         let characters = this.characters.filter((char) => char.type === this.selectedCharacter);
 
-        return characters.length !== 1 ? [] : characters.values().next().value.cards
+        return characters.length !== 1 ? [] : characters.values().next().value.allCards
     }
 
     private isCharacterLoaded = (type: CharacterType) => {
@@ -131,7 +142,7 @@ export class CharacterDataStore {
     };
 
     private maxCardsHaveBeenSelected = (card: Card) => {
-        return !card.selected && this.currentCards.filter((card) => card.selected).length >= this.currentCharacter!!.numOfCards;
+        return !card.inScenarioDeck && this.currentCards.filter((card) => card.inScenarioDeck).length >= this.currentCharacter!!.numOfCards;
     };
 
     private capitalize = (word: string): string => {

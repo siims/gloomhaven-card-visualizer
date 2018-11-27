@@ -9,11 +9,11 @@ export class Character {
     type: CharacterType;
     @observable level: number;
     numOfCards: number;
-    cards: Card[];
+    allCards: Card[];
 
-    constructor(type: CharacterType, cards: Card[], level: number, numOfCards: number) {
+    constructor(type: CharacterType, allCards: Card[], level: number, numOfCards: number) {
         this.type = type;
-        this.cards = cards;
+        this.allCards = allCards;
         this.level = level;
         this.numOfCards = numOfCards;
     }
