@@ -7,6 +7,9 @@ import Paper from "@material-ui/core/es/Paper/Paper";
 import Spinner from "./Spinner";
 import Typography from "@material-ui/core/es/Typography/Typography";
 import CharacterSelection from "./CharacterSelection";
+import IconButton from "@material-ui/core/es/IconButton/IconButton";
+import {Card} from "../models/Card";
+import {DeleteForever, LibraryAdd} from "@material-ui/icons";
 
 interface IAllCardsViewProps {
     characterDataStore?: CharacterDataStore;
@@ -41,18 +44,30 @@ class AllCardsView extends Component<IAllCardsViewProps> {
                 <Paper>
                     {!store.finished ? <Spinner/> :
                         store.availableCards.map(card => {
+                            const cardInScenarioDeck = card.inScenarioDeck ? "card-in-scenario-deck" : "";
+                            const cardInPlayerDeck = card.inPlayerDeck ? "card-in-player-deck" : "";
+                            const cardImageClasses = `card-image ${cardInPlayerDeck} ${cardInScenarioDeck}`;
                             return (
-                                <img
-                                    src={card.imgUrl}
-                                    key={card.name}
-                                    alt={card.name}
-                                    onClick={store.toggleSelect}
-                                    onError={() => {
-                                        card.imgUrl = ApiService.defaultCardUrl(store.selectedCharacter)
-                                    }}
-                                    style={{display: "inline", width: "10rem"}}
-                                    className={card.selected ? "card-selected" : ""}
-                                />
+                                <div key={card.name} className={"card"}>
+                                    <img
+                                        src={card.imgUrl}
+                                        alt={card.name}
+                                        onClick={() => store.toggleToFromScenarioDeck(card)}
+                                        onError={() => {
+                                            card.imgUrl = ApiService.defaultCardUrl(store.selectedCharacter)
+                                        }}
+                                        className={cardImageClasses}
+                                    />
+                                    <IconButton
+                                        onClick={() => store.toggleToFromPlayerDeck(card)}
+                                        className={"card-to-from-player-deck"}
+                                        aria-label="Toggle to-from player deck"
+                                        style={{display: Card.alwaysInPlayerDeck(card) ? "none": "initial"}}
+                                    >
+                                        <LibraryAdd style={{display: card.inPlayerDeck ? "none" : "initial"}}/>
+                                        <DeleteForever style={{display: !card.inPlayerDeck ? "none" : "initial"}}/>
+                                    </IconButton>
+                                </div>
                             );
                         })}
                 </Paper>

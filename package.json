@@ -12,7 +12,8 @@
     "eject": "react-scripts-ts eject"
   },
   "dependencies": {
-    "@material-ui/core": "^3.2.2",
+    "@material-ui/core": "^3.6.0",
+    "@material-ui/icons": "^3.0.1",
     "mobx": "^5.5.1",
     "mobx-react": "^5.3.4",
     "react": "^16.5.2",

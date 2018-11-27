@@ -1,3 +1,25 @@
-.card-selected {
+.card {
+    display: inline-block;
+    position: relative;
+}
+
+.card-image {
+    display: inline;
+    width: 10rem;
+    opacity: 0.7;
+}
+
+.card-in-scenario-deck {
     padding: 0.5rem;
+}
+.card-in-player-deck {
+    opacity: 1;
+}
+
+.card-to-from-player-deck {
+    position: absolute!important;
+    color: white!important;
+    top: 0.1rem;
+    left: 0.1rem;
+    z-index: 1;
 }
