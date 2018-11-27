@@ -93,7 +93,9 @@ export class CharacterDataStore {
         this.currentCards.forEach((card) => {
             if (card.name === cardName) {
                 card.inPlayerDeck = !card.inPlayerDeck;
+                card.inScenarioDeck = false;
                 this.localStoreService.setCardInPlayerDeckState(this.selectedCharacter, card);
+                this.localStoreService.setCardInScenarioDeckState(this.selectedCharacter, card);
             }
         });
     }
