@@ -1,0 +1,20 @@
+import React from 'react';
+import BeastTyrantIcon from "./BeastTyrantIcon";
+import BerserkerIcon from "./BerserkerIcon";
+import BruteIcon from "./BruteIcon";
+import CragheartIcon from "./CragheartIcon";
+import DoomstalkerIcon from "./DoomstalkerIcon";
+import ElementalistIcon from "./ElementalistIcon";
+import MindthiefIcon from "./MindthiefIcon";
+import NightshroudIcon from "./NightshroudIcon";
+import PlagueheraldIcon from "./PlagueheraldIcon";
+import QuartermasterIcon from "./QuartermasterIcon";
+import SawbonesIcon from "./SawbonesIcon";
+import ScoundrelIcon from "./ScoundrelIcon";
+import SoothsingerIcon from "./SoothsingerIcon";
+import SpellweaverIcon from "./SpellweaverIcon";
+import SummonerIcon from "./SummonerIcon";
+import SunkeeperIcon from "./SunkeeperIcon";
+import TinkererIcon from "./TinkererIcon";
+
+export const CharacterIcons = [<BeastTyrantIcon/>,<BerserkerIcon/>,<BruteIcon/>,<CragheartIcon/>,<DoomstalkerIcon/>,<ElementalistIcon/>,<MindthiefIcon/>,<NightshroudIcon/>,<PlagueheraldIcon/>,<QuartermasterIcon/>,<SawbonesIcon/>,<ScoundrelIcon/>,<SoothsingerIcon/>,<SpellweaverIcon/>,<SummonerIcon/>,<SunkeeperIcon/>,<TinkererIcon/>];

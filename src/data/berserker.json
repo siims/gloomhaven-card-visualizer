@@ -1,0 +1,122 @@
+{
+  "type": "berserker",
+  "numOfCards": 10,
+  "cards": [
+    {
+      "name": "Blood Pact",
+      "level": "1"
+    },
+    {
+      "name": "Bounce Back",
+      "level": "1"
+    },
+    {
+      "name": "Cauterize",
+      "level": "1"
+    },
+    {
+      "name": "Dazing Wound",
+      "level": "1"
+    },
+    {
+      "name": "Defiance of Death",
+      "level": "1"
+    },
+    {
+      "name": "From the Brink",
+      "level": "1"
+    },
+    {
+      "name": "Furious Aid",
+      "level": "1"
+    },
+    {
+      "name": "Growing Rage",
+      "level": "1"
+    },
+    {
+      "name": "Resolute Stand",
+      "level": "1"
+    },
+    {
+      "name": "Strength in Agony",
+      "level": "1"
+    },
+    {
+      "name": "Glass Hammer",
+      "level": "X"
+    },
+    {
+      "name": "Numb the Pain",
+      "level": "X"
+    },
+    {
+      "name": "Unbridled Power",
+      "level": "X"
+    },
+    {
+      "name": "Break the Chains",
+      "level": "2"
+    },
+    {
+      "name": "Reckless Offensive",
+      "level": "2"
+    },
+    {
+      "name": "Fatal Fury",
+      "level": "3"
+    },
+    {
+      "name": "Spiked Armor",
+      "level": "3"
+    },
+    {
+      "name": "Flurry of Axes",
+      "level": "4"
+    },
+    {
+      "name": "Shiny Distraction",
+      "level": "4"
+    },
+    {
+      "name": "Final Fight",
+      "level": "5"
+    },
+    {
+      "name": "Seeing Red",
+      "level": "5"
+    },
+    {
+      "name": "Devil Horns",
+      "level": "6"
+    },
+    {
+      "name": "Unstoppable Destruction",
+      "level": "6"
+    },
+    {
+      "name": "Burning Hatred",
+      "level": "7"
+    },
+    {
+      "name": "Careless Charge",
+      "level": "7"
+    },
+    {
+      "name": "Bone Breaker",
+      "level": "8"
+    },
+    {
+      "name": "Vengeful Barrage",
+      "level": "8"
+    },
+    {
+      "name": "Immortality",
+      "level": "9"
+    },
+    {
+      "name": "The Maw of Madness",
+      "level": "9"
+    }
+  ]
+}

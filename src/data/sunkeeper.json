@@ -1,0 +1,126 @@
+{
+  "type": "sunkeeper",
+  "numOfCards": 11,
+  "cards": [
+    {
+      "name": "Brilliant Prayer",
+      "level": "1"
+    },
+    {
+      "name": "Cautious Advance",
+      "level": "1"
+    },
+    {
+      "name": "Dazzling Charge",
+      "level": "1"
+    },
+    {
+      "name": "Defensive Stance",
+      "level": "1"
+    },
+    {
+      "name": "Empowering Command",
+      "level": "1"
+    },
+    {
+      "name": "Hammer Blow",
+      "level": "1"
+    },
+    {
+      "name": "Holy Strike",
+      "level": "1"
+    },
+    {
+      "name": "Lay on Hands",
+      "level": "1"
+    },
+    {
+      "name": "Protective Blessing",
+      "level": "1"
+    },
+    {
+      "name": "Purifying Aura",
+      "level": "1"
+    },
+    {
+      "name": "Tactical Order",
+      "level": "1"
+    },
+    {
+      "name": "Beacon of Light",
+      "level": "X"
+    },
+    {
+      "name": "Daybreak",
+      "level": "X"
+    },
+    {
+      "name": "Glorious Bolt",
+      "level": "X"
+    },
+    {
+      "name": "Practical Plans",
+      "level": "2"
+    },
+    {
+      "name": "Unwavering Mandate",
+      "level": "2"
+    },
+    {
+      "name": "Burning Flash",
+      "level": "3"
+    },
+    {
+      "name": "Mobilizing Axiom",
+      "level": "3"
+    },
+    {
+      "name": "Engulfing Radiance",
+      "level": "4"
+    },
+    {
+      "name": "Righteous Strength",
+      "level": "4"
+    },
+    {
+      "name": "Path of Glory",
+      "level": "5"
+    },
+    {
+      "name": "Scales of Justice",
+      "level": "5"
+    },
+    {
+      "name": "Illuminate the Target",
+      "level": "6"
+    },
+    {
+      "name": "Supportive Chant",
+      "level": "6"
+    },
+    {
+      "name": "Bright Aegis",
+      "level": "7"
+    },
+    {
+      "name": "Weapon of Purity",
+      "level": "7"
+    },
+    {
+      "name": "Cleansing Force",
+      "level": "8"
+    },
+    {
+      "name": "Inspiring Sanctity",
+      "level": "8"
+    },
+    {
+      "name": "Angelic Ascension",
+      "level": "9"
+    },
+    {
+      "name": "Divine Intervention",
+      "level": "9"
+    }
+  ]
+}

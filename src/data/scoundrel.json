@@ -1,1 +1,118 @@
-../../data/scoundrel.json
+{
+  "type": "scoundrel",
+  "numOfCards": 9,
+  "cards": [
+    {
+      "name": "Single Out",
+      "level": "1"
+    },
+    {
+      "name": "Flanking Strike",
+      "level": "1"
+    },
+    {
+      "name": "Smoke Bomb",
+      "level": "1"
+    },
+    {
+      "name": "Backstab",
+      "level": "1"
+    },
+    {
+      "name": "Thief's Knack",
+      "level": "1"
+    },
+    {
+      "name": "Venom Shiv",
+      "level": "1"
+    },
+    {
+      "name": "Throwing Knives",
+      "level": "1"
+    },
+    {
+      "name": "Quick Hands",
+      "level": "1"
+    },
+    {
+      "name": "Special Mixture",
+      "level": "1"
+    },
+    {
+      "name": "Sinister Opportunity",
+      "level": "X"
+    },
+    {
+      "name": "Trickster's Reversal",
+      "level": "X"
+    },
+    {
+      "name": "Swift Bow",
+      "level": "X"
+    },
+    {
+      "name": "Open Wound",
+      "level": "2"
+    },
+    {
+      "name": "Flintlock",
+      "level": "2"
+    },
+    {
+      "name": "Hidden Daggers",
+      "level": "3"
+    },
+    {
+      "name": "Duelist's Advance",
+      "level": "3"
+    },
+    {
+      "name": "Flurry of Blades",
+      "level": "4"
+    },
+    {
+      "name": "Gruesome Advantage",
+      "level": "4"
+    },
+    {
+      "name": "Cull the Weak",
+      "level": "5"
+    },
+    {
+      "name": "Visage of the Inevitable",
+      "level": "5"
+    },
+    {
+      "name": "Crippling Poison",
+      "level": "6"
+    },
+    {
+      "name": "Burning Oil",
+      "level": "6"
+    },
+    {
+      "name": "Stick to the Shadows",
+      "level": "7"
+    },
+    {
+      "name": "Spring the Trap",
+      "level": "7"
+    },
+    {
+      "name": "Stiletto Storm",
+      "level": "8"
+    },
+    {
+      "name": "Pain's End",
+      "level": "8"
+    },
+    {
+      "name": "Long Con",
+      "level": "9"
+    },
+    {
+      "name": "Watch It Burn",
+      "level": "9"
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "type": "brute",
+  "numOfCards": 10,
+  "cards": [
+    {
+      "name": "Eye for an Eye",
+      "level": "1"
+    },
+    {
+      "name": "Grab and Go",
+      "level": "1"
+    },
+    {
+      "name": "Leaping Cleave",
+      "level": "1"
+    },
+    {
+      "name": "Overwhelming Assault",
+      "level": "1"
+    },
+    {
+      "name": "Provoking Roar",
+      "level": "1"
+    },
+    {
+      "name": "Shield Bash",
+      "level": "1"
+    },
+    {
+      "name": "Spare Dagger",
+      "level": "1"
+    },
+    {
+      "name": "Sweeping Blow",
+      "level": "1"
+    },
+    {
+      "name": "Trample",
+      "level": "1"
+    },
+    {
+      "name": "Warding Strength",
+      "level": "1"
+    },
+    {
+      "name": "Balanced Measure",
+      "level": "X"
+    },
+    {
+      "name": "Skewer",
+      "level": "X"
+    },
+    {
+      "name": "Wall of Doom",
+      "level": "X"
+    },
+    {
+      "name": "Fatal Advance",
+      "level": "2"
+    },
+    {
+      "name": "Juggernaut",
+      "level": "2"
+    },
+    {
+      "name": "Brute Force",
+      "level": "3"
+    },
+    {
+      "name": "Hook and Chain",
+      "level": "3"
+    },
+    {
+      "name": "Devastating Hack",
+      "level": "4"
+    },
+    {
+      "name": "Unstoppable Charge",
+      "level": "4"
+    },
+    {
+      "name": "Skirmishing Maneuver",
+      "level": "5"
+    },
+    {
+      "name": "Whirlwind",
+      "level": "5"
+    },
+    {
+      "name": "Immovable Phalanx",
+      "level": "6"
+    },
+    {
+      "name": "Quietus",
+      "level": "6"
+    },
+    {
+      "name": "Crippling Offensive",
+      "level": "7"
+    },
+    {
+      "name": "Defensive Tactics",
+      "level": "7"
+    },
+    {
+      "name": "Frenzied Onslaught",
+      "level": "8"
+    },
+    {
+      "name": "Selfish Retribution",
+      "level": "8"
+    },
+    {
+      "name": "Face Your End",
+      "level": "9"
+    },
+    {
+      "name": "King of the Hill",
+      "level": "9"
+    }
+  ]
+}

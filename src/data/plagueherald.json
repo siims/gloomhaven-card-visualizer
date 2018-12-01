@@ -1,1 +1,126 @@
-../../data/plagueherald.json
+{
+  "type": "plagueherald",
+  "numOfCards": 11,
+  "cards": [
+    {
+      "name": "Biting Gnats",
+      "level": "1"
+    },
+    {
+      "name": "Creeping Curse",
+      "level": "1"
+    },
+    {
+      "name": "Foul Wind",
+      "level": "1"
+    },
+    {
+      "name": "Gathering Doom",
+      "level": "1"
+    },
+    {
+      "name": "Grasping Vermin",
+      "level": "1"
+    },
+    {
+      "name": "Paralyzing Bite",
+      "level": "1"
+    },
+    {
+      "name": "Scattered Terror",
+      "level": "1"
+    },
+    {
+      "name": "Spread the Plague",
+      "level": "1"
+    },
+    {
+      "name": "Vile Pestilence",
+      "level": "1"
+    },
+    {
+      "name": "Winged Congregation",
+      "level": "1"
+    },
+    {
+      "name": "Wretched Swarm",
+      "level": "1"
+    },
+    {
+      "name": "Blistering Vortex",
+      "level": "X"
+    },
+    {
+      "name": "Virulent Strain",
+      "level": "X"
+    },
+    {
+      "name": "Epidemic",
+      "level": "X"
+    },
+    {
+      "name": "Rot Maggots",
+      "level": "2"
+    },
+    {
+      "name": "Under the Skin",
+      "level": "2"
+    },
+    {
+      "name": "Fetid Flurry",
+      "level": "3"
+    },
+    {
+      "name": "Succumb to the Gift",
+      "level": "3"
+    },
+    {
+      "name": "Nightmarish Affliction",
+      "level": "4"
+    },
+    {
+      "name": "Storm of Wings",
+      "level": "4"
+    },
+    {
+      "name": "Accelerated End",
+      "level": "5"
+    },
+    {
+      "name": "Willing Sacrifice",
+      "level": "5"
+    },
+    {
+      "name": "Black Tides",
+      "level": "6"
+    },
+    {
+      "name": "Stinging Cloud",
+      "level": "6"
+    },
+    {
+      "name": "Grim Bargain",
+      "level": "8"
+    },
+    {
+      "name": "Airborne Toxin",
+      "level": "7"
+    },
+    {
+      "name": "Baneful Hex",
+      "level": "7"
+    },
+    {
+      "name": "Spreading Scourge",
+      "level": "8"
+    },
+    {
+      "name": "Convert the Flock",
+      "level": "9"
+    },
+    {
+      "name": "Mass Extinction",
+      "level": "9"
+    }
+  ]
+}

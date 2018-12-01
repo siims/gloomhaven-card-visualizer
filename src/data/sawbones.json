@@ -1,0 +1,130 @@
+{
+  "type": "sawbones",
+  "numOfCards": 10,
+  "cards": [
+    {
+      "name": "Battlefield Medicine",
+      "level": "1"
+    },
+    {
+      "name": "Bloody Saw",
+      "level": "1"
+    },
+    {
+      "name": "Booster Shot",
+      "level": "1"
+    },
+    {
+      "name": "Curative Mixture",
+      "level": "1"
+    },
+    {
+      "name": "First Aid",
+      "level": "1"
+    },
+    {
+      "name": "Hand of the Surgeon",
+      "level": "1"
+    },
+    {
+      "name": "Hold Back the Pain",
+      "level": "1"
+    },
+    {
+      "name": "Mobile Response",
+      "level": "1"
+    },
+    {
+      "name": "Syringe",
+      "level": "1"
+    },
+    {
+      "name": "Triage",
+      "level": "1"
+    },
+    {
+      "name": "Prevention Is Key",
+      "level": "X"
+    },
+    {
+      "name": "Teamwork",
+      "level": "X"
+    },
+    {
+      "name": "Vaccine",
+      "level": "X"
+    },
+    {
+      "name": "Medical Pack",
+      "level": "M"
+    },
+    {
+      "name": "Large Medical Pack",
+      "level": "M"
+    },
+    {
+      "name": "Hamstring",
+      "level": "2"
+    },
+    {
+      "name": "Precaution",
+      "level": "2"
+    },
+    {
+      "name": "Regenerative Tissue",
+      "level": "3"
+    },
+    {
+      "name": "Vital Strike",
+      "level": "3"
+    },
+    {
+      "name": "Blood Transfusion",
+      "level": "4"
+    },
+    {
+      "name": "Do No Harm",
+      "level": "4"
+    },
+    {
+      "name": "Amputate",
+      "level": "5"
+    },
+    {
+      "name": "Research the Cure",
+      "level": "5"
+    },
+    {
+      "name": "Euthanize",
+      "level": "6"
+    },
+    {
+      "name": "Prescription",
+      "level": "6"
+    },
+    {
+      "name": "Master Physician",
+      "level": "7"
+    },
+    {
+      "name": "Surgeon's Satchel",
+      "level": "7"
+    },
+    {
+      "name": "Gentleman's Anger",
+      "level": "8"
+    },
+    {
+      "name": "Bedside Manner",
+      "level": "8"
+    },
+    {
+      "name": "Grisly Trauma",
+      "level": "9"
+    },
+    {
+      "name": "Prep for Surgery",
+      "level": "9"
+    }
+  ]
+}

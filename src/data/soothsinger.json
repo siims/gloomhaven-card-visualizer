@@ -1,0 +1,118 @@
+{
+  "type": "soothsinger",
+  "numOfCards": 9,
+  "cards": [
+    {
+      "name": "Call to Action",
+      "level": "1"
+    },
+    {
+      "name": "Defensive Ditty",
+      "level": "1"
+    },
+    {
+      "name": "Marching Beat",
+      "level": "1"
+    },
+    {
+      "name": "Power Ballad",
+      "level": "1"
+    },
+    {
+      "name": "Singing Arrow",
+      "level": "1"
+    },
+    {
+      "name": "Song of Speed",
+      "level": "1"
+    },
+    {
+      "name": "Throw Voice",
+      "level": "1"
+    },
+    {
+      "name": "Tuning the Outcome",
+      "level": "1"
+    },
+    {
+      "name": "Warding Dagger",
+      "level": "1"
+    },
+    {
+      "name": "Nimble Knife",
+      "level": "X"
+    },
+    {
+      "name": "Unending Chant",
+      "level": "X"
+    },
+    {
+      "name": "Wistful Wounding",
+      "level": "X"
+    },
+    {
+      "name": "Change Tempo",
+      "level": "2"
+    },
+    {
+      "name": "Soothing Lullaby",
+      "level": "2"
+    },
+    {
+      "name": "Crippling Chorus",
+      "level": "3"
+    },
+    {
+      "name": "Echoing Aria",
+      "level": "3"
+    },
+    {
+      "name": "Disorienting Dirge",
+      "level": "4"
+    },
+    {
+      "name": "Inspiring Anthem",
+      "level": "4"
+    },
+    {
+      "name": "Melody and Harmony",
+      "level": "5"
+    },
+    {
+      "name": "Mobilizing Measure",
+      "level": "5"
+    },
+    {
+      "name": "Provoke Terror",
+      "level": "6"
+    },
+    {
+      "name": "Pull the Strings",
+      "level": "6"
+    },
+    {
+      "name": "Booming Proclamation",
+      "level": "7"
+    },
+    {
+      "name": "Nightmare Serenade",
+      "level": "7"
+    },
+    {
+      "name": "Commanding Presence",
+      "level": "8"
+    },
+    {
+      "name": "Tranquil Trill",
+      "level": "8"
+    },
+    {
+      "name": "Captivating Performance",
+      "level": "9"
+    },
+    {
+      "name": "Shadow Puppets",
+      "level": "9"
+    }
+  ]
+}
