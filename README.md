@@ -25,16 +25,15 @@ npm run start
 # open browser and visit http://localhost:3000/
 ```
 #### Adding character
-1. Add json data file to `data/` (follow existing examples there)
-2. Add symlink to `src/data/` of the newly created json file
-3. `src/models/Character.ts` add new type to CharacterType type and CharacterTypes array
-4. `src/stores/CharacterDataStore.ts` import newly created data file and insert a line (`this.setCharacter(this.transformToCharacter(yourCharData))`) to method `loadCharacterData`
-5. get your character ability card png images
+1. Add json data file to `src/data/` (follow existing examples there)
+2. `src/models/Character.ts` add new type to CharacterType type and CharacterTypes array
+3. `src/stores/CharacterDataStore.ts` import newly created data file and insert a line (`this.setCharacter(this.transformToCharacter(yourCharData))`) to method `loadCharacterData`
+4. get your character ability card png images
    * character cards' pdf from https://drive.google.com/drive/folders/1pZulOYdbWcVbpArpU8AL39k2yDuqmon-
    * `for f in QM.pdf; do pdftocairo $f -png -scale-to 350; done`
    * rename all cards to have card's name
-6. copy images to `public/static/images/cards/`
-7. that is all, enjoy!
+5. copy images to `public/static/images/cards/`
+6. that is all, enjoy!
 #### Github pages
 There is a separate branch `gh-pages` that is served by github. Updating goes in 7 steps:
 ```

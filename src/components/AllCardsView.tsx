@@ -11,6 +11,7 @@ import IconButton from "@material-ui/core/es/IconButton/IconButton";
 import {Card} from "../models/Card";
 import {DeleteForever, LibraryAdd} from "@material-ui/icons";
 
+
 interface IAllCardsViewProps {
     characterDataStore?: CharacterDataStore;
 }

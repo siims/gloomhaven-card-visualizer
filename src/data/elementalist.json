@@ -1,1 +1,122 @@
-../../data/elementalist.json
+{
+  "type": "elementalist",
+  "numOfCards": 10,
+  "cards": [
+    {
+      "name": "Raw Enhancement",
+      "level": "1"
+    },
+    {
+      "name": "Pure Augmentation",
+      "level": "1"
+    },
+    {
+      "name": "Formless Power",
+      "level": "1"
+    },
+    {
+      "name": "Shaping the Ether",
+      "level": "1"
+    },
+    {
+      "name": "Stoking Hail",
+      "level": "1"
+    },
+    {
+      "name": "Tremulant Cyclone",
+      "level": "1"
+    },
+    {
+      "name": "Infernal Vortex",
+      "level": "1"
+    },
+    {
+      "name": "Lava Eruption",
+      "level": "1"
+    },
+    {
+      "name": "Ice Spikes",
+      "level": "1"
+    },
+    {
+      "name": "Frigid Torrent",
+      "level": "1"
+    },
+    {
+      "name": "Malleable Evocation",
+      "level": "X"
+    },
+    {
+      "name": "Brilliant Flash",
+      "level": "X"
+    },
+    {
+      "name": "Encompassing Shadow",
+      "level": "X"
+    },
+    {
+      "name": "Boiling Arc",
+      "level": "2"
+    },
+    {
+      "name": "Crystallizing Blast",
+      "level": "2"
+    },
+    {
+      "name": "Burial",
+      "level": "3"
+    },
+    {
+      "name": "Chain Lightning",
+      "level": "3"
+    },
+    {
+      "name": "Primal Duality",
+      "level": "4"
+    },
+    {
+      "name": "Gravel Vortex",
+      "level": "4"
+    },
+    {
+      "name": "Obsidian Shards",
+      "level": "5"
+    },
+    {
+      "name": "Winter's Edge",
+      "level": "5"
+    },
+    {
+      "name": "Eye of the Hurricane",
+      "level": "6"
+    },
+    {
+      "name": "Simulacrum",
+      "level": "6"
+    },
+    {
+      "name": "Vengeance",
+      "level": "7"
+    },
+    {
+      "name": "Pragmatic Reinforcement",
+      "level": "7"
+    },
+    {
+      "name": "Volatile Consumption",
+      "level": "8"
+    },
+    {
+      "name": "Elemental Aegis",
+      "level": "8"
+    },
+    {
+      "name": "Ethereal Manifestation",
+      "level": "9"
+    },
+    {
+      "name": "Eternal Equilibrium",
+      "level": "9"
+    }
+  ]
+}

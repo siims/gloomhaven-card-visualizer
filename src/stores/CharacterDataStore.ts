@@ -5,11 +5,23 @@ import {ChangeEvent} from "react";
 import {Character, CharacterType} from "../models/Character";
 import {LocalStorageService} from "../services/LocalStorageService";
 
+const beastTyrantData = require("../data/beast_tyrant.json");
+const berserkerData = require("../data/berserker.json");
+const bruteData = require("../data/brute.json");
 const cragheartData = require("../data/cragheart.json");
+const doomstalkerData = require("../data/doomstalker.json");
 const elementalistData = require("../data/elementalist.json");
+const mindthiefData = require("../data/mindthief.json");
+const nightshroudData = require("../data/nightshroud.json");
 const plagueheraldData = require("../data/plagueherald.json");
 const quartermasterData = require("../data/quartermaster.json");
+const sawbonesData = require("../data/sawbones.json");
 const scoundrelData = require("../data/scoundrel.json");
+const soothsingerData = require("../data/soothsinger.json");
+const spellweaverData = require("../data/spellweaver.json");
+const summonerData = require("../data/summoner.json");
+const sunkeeperData = require("../data/sunkeeper.json");
+const tinkererData = require("../data/tinkerer.json");
 
 export class CharacterDataStore {
     private localStoreService: LocalStorageService;
@@ -27,11 +39,23 @@ export class CharacterDataStore {
     public loadCharacterData = () => {
         if (this.notStartedLoading) {
             this.notStartedLoading = false;
+            this.setCharacter(this.transformToCharacter(beastTyrantData));
+            this.setCharacter(this.transformToCharacter(berserkerData));
+            this.setCharacter(this.transformToCharacter(bruteData));
             this.setCharacter(this.transformToCharacter(cragheartData));
+            this.setCharacter(this.transformToCharacter(doomstalkerData));
             this.setCharacter(this.transformToCharacter(elementalistData));
+            this.setCharacter(this.transformToCharacter(mindthiefData));
+            this.setCharacter(this.transformToCharacter(nightshroudData));
             this.setCharacter(this.transformToCharacter(plagueheraldData));
             this.setCharacter(this.transformToCharacter(quartermasterData));
+            this.setCharacter(this.transformToCharacter(sawbonesData));
             this.setCharacter(this.transformToCharacter(scoundrelData));
+            this.setCharacter(this.transformToCharacter(soothsingerData));
+            this.setCharacter(this.transformToCharacter(spellweaverData));
+            this.setCharacter(this.transformToCharacter(summonerData));
+            this.setCharacter(this.transformToCharacter(sunkeeperData));
+            this.setCharacter(this.transformToCharacter(tinkererData));
         }
     };
 
@@ -123,12 +147,13 @@ export class CharacterDataStore {
     private transformToCharacter = (rawJsonData: any): Character => {
         const cards: Card[] = [];
         const type: CharacterType = rawJsonData.type;
+        const icon: string = rawJsonData.icon;
         rawJsonData.cards.forEach((item: any) => {
             let cardName = item.name;
-            let card = new Card(cardName, item.level, this.localStoreService.getCardInPlayerDeckState(type, cardName), this.localStoreService.getCardInScenarioDeckState(type, cardName));
+            let card = new Card(type, cardName, item.level, this.localStoreService.getCardInPlayerDeckState(type, cardName), this.localStoreService.getCardInScenarioDeckState(type, cardName));
             cards.push(card);
         });
-        return new Character(type, cards, this.localStoreService.getCharacterLevel(type), rawJsonData.numOfCards);
+        return new Character(type, cards, this.localStoreService.getCharacterLevel(type), icon, rawJsonData.numOfCards);
     };
 
     @action.bound
@@ -150,7 +175,7 @@ export class CharacterDataStore {
     };
 
     private inLevelRange = (card: Card) => {
-        if (card.level === "X") {
+        if (card.level === "X" || card.level === "M") {
             return true;
         }
         return Number(card.level) <= this.level;

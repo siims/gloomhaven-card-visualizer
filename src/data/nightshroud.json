@@ -1,0 +1,118 @@
+{
+  "type": "nightshroud",
+  "numOfCards": 9,
+  "cards": [
+    {
+      "name": "Black Knives",
+      "level": "1"
+    },
+    {
+      "name": "Cloak of Shade",
+      "level": "1"
+    },
+    {
+      "name": "Dancing Shadows",
+      "level": "1"
+    },
+    {
+      "name": "Doomed Breeze",
+      "level": "1"
+    },
+    {
+      "name": "Empowering Void",
+      "level": "1"
+    },
+    {
+      "name": "Enervating Wound",
+      "level": "1"
+    },
+    {
+      "name": "Silent Force",
+      "level": "1"
+    },
+    {
+      "name": "Smoke Step",
+      "level": "1"
+    },
+    {
+      "name": "Spirit of the Night",
+      "level": "1"
+    },
+    {
+      "name": "Concealed Dominance",
+      "level": "X"
+    },
+    {
+      "name": "Dark Cloud",
+      "level": "X"
+    },
+    {
+      "name": "Wings of the Night",
+      "level": "X"
+    },
+    {
+      "name": "Prepare for the Kill",
+      "level": "2"
+    },
+    {
+      "name": "Soulfire",
+      "level": "2"
+    },
+    {
+      "name": "Armor of the Night",
+      "level": "3"
+    },
+    {
+      "name": "Terror Blade",
+      "level": "3"
+    },
+    {
+      "name": "Grim Sustenance",
+      "level": "4"
+    },
+    {
+      "name": "Nightfall",
+      "level": "4"
+    },
+    {
+      "name": "Black Arrow",
+      "level": "5"
+    },
+    {
+      "name": "Claws of the Night",
+      "level": "5"
+    },
+    {
+      "name": "Swallowed by Fear",
+      "level": "6"
+    },
+    {
+      "name": "Unseen Dread",
+      "level": "6"
+    },
+    {
+      "name": "Eyes of the Night",
+      "level": "7"
+    },
+    {
+      "name": "Quiet Frenzy",
+      "level": "7"
+    },
+    {
+      "name": "Gloom Darts",
+      "level": "8"
+    },
+    {
+      "name": "Lurking Ruin",
+      "level": "8"
+    },
+    {
+      "name": "Angel of Death",
+      "level": "9"
+    },
+    {
+      "name": "Voice of the Night",
+      "level": "9"
+    }
+  ]
+}

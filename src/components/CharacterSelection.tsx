@@ -5,6 +5,7 @@ import {CharacterDataStore} from "../stores/CharacterDataStore";
 import Tab from "@material-ui/core/es/Tab/Tab";
 import Tabs from "@material-ui/core/es/Tabs/Tabs";
 import {CharacterTypes} from "../models/Character";
+import {CharacterIcons} from "./icons/Icons";
 
 interface ICharacterSelectionProps {
     characterDataStore?: CharacterDataStore;
@@ -27,8 +28,8 @@ class CharacterSelection extends Component<ICharacterSelectionProps> {
                 fullWidth
             >
                 {
-                    CharacterTypes.map((characterType, i) => {
-                        return <Tab label={characterType} key={i}/>
+                    CharacterIcons.map((icon, i) => {
+                        return (<Tab style={{minWidth: "3rem"}} icon={icon} key={i}/>);
                     })
                 }
             </Tabs>

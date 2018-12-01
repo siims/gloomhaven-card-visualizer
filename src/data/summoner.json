@@ -1,0 +1,118 @@
+{
+  "type": "summoner",
+  "numOfCards": 9,
+  "cards": [
+    {
+      "name": "Biting Wind",
+      "level": "1"
+    },
+    {
+      "name": "Black Fire",
+      "level": "1"
+    },
+    {
+      "name": "Bonded Might",
+      "level": "1"
+    },
+    {
+      "name": "Forged Ferocity",
+      "level": "1"
+    },
+    {
+      "name": "Living Night",
+      "level": "1"
+    },
+    {
+      "name": "Mighty Bond",
+      "level": "1"
+    },
+    {
+      "name": "Unending Dominance",
+      "level": "1"
+    },
+    {
+      "name": "Unwavering Hand",
+      "level": "1"
+    },
+    {
+      "name": "Wild Animation",
+      "level": "1"
+    },
+    {
+      "name": "Ethereal Vines",
+      "level": "X"
+    },
+    {
+      "name": "Leathery Wings",
+      "level": "X"
+    },
+    {
+      "name": "Volatile Flame",
+      "level": "X"
+    },
+    {
+      "name": "Earthen Steed",
+      "level": "2"
+    },
+    {
+      "name": "Grasping the Void",
+      "level": "2"
+    },
+    {
+      "name": "Oozing Manifestation",
+      "level": "3"
+    },
+    {
+      "name": "Tear the Fabric",
+      "level": "3"
+    },
+    {
+      "name": "Divided Mind",
+      "level": "4"
+    },
+    {
+      "name": "Living Mountain",
+      "level": "4"
+    },
+    {
+      "name": "Conjured Aid",
+      "level": "5"
+    },
+    {
+      "name": "Strength in Numbers",
+      "level": "5"
+    },
+    {
+      "name": "Endless Spikes",
+      "level": "6"
+    },
+    {
+      "name": "Inexorable Momentum",
+      "level": "6"
+    },
+    {
+      "name": "Negative Energy",
+      "level": "7"
+    },
+    {
+      "name": "Staff of Visions",
+      "level": "7"
+    },
+    {
+      "name": "Intervening Apparitions",
+      "level": "8"
+    },
+    {
+      "name": "Otherworldly Rage",
+      "level": "8"
+    },
+    {
+      "name": "Horned Majesty",
+      "level": "9"
+    },
+    {
+      "name": "Interplanar Mastery",
+      "level": "9"
+    }
+  ]
+}

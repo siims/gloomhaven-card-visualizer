@@ -1,0 +1,130 @@
+{
+  "type": "tinkerer",
+  "numOfCards": 12,
+  "cards": [
+    {
+      "name": "Energizing Tonic",
+      "level": "1"
+    },
+    {
+      "name": "Enhancement Field",
+      "level": "1"
+    },
+    {
+      "name": "Flamethrower",
+      "level": "1"
+    },
+    {
+      "name": "Harmless Contraption",
+      "level": "1"
+    },
+    {
+      "name": "Hook Gun",
+      "level": "1"
+    },
+    {
+      "name": "Ink Bomb",
+      "level": "1"
+    },
+    {
+      "name": "Net Shooter",
+      "level": "1"
+    },
+    {
+      "name": "Proximity Mine",
+      "level": "1"
+    },
+    {
+      "name": "Reinvigorating Elixir",
+      "level": "1"
+    },
+    {
+      "name": "Restorative Mist",
+      "level": "1"
+    },
+    {
+      "name": "Stun Shot",
+      "level": "1"
+    },
+    {
+      "name": "Toxic Bolt",
+      "level": "1"
+    },
+    {
+      "name": "Potent Potables",
+      "level": "X"
+    },
+    {
+      "name": "Reviving Shock",
+      "level": "X"
+    },
+    {
+      "name": "Volatile Concoction",
+      "level": "X"
+    },
+    {
+      "name": "Disorienting Flash",
+      "level": "2"
+    },
+    {
+      "name": "Stamina Booster",
+      "level": "2"
+    },
+    {
+      "name": "Crank Bow",
+      "level": "3"
+    },
+    {
+      "name": "Tinkerer's Tools",
+      "level": "3"
+    },
+    {
+      "name": "Dangerous Contraption",
+      "level": "4"
+    },
+    {
+      "name": "Micro Bots",
+      "level": "4"
+    },
+    {
+      "name": "Disintegration Beam",
+      "level": "5"
+    },
+    {
+      "name": "Noxious Vials",
+      "level": "5"
+    },
+    {
+      "name": "Auto Turret",
+      "level": "6"
+    },
+    {
+      "name": "Gas Canister",
+      "level": "6"
+    },
+    {
+      "name": "Curative Aerosol",
+      "level": "7"
+    },
+    {
+      "name": "Murderous Contraption",
+      "level": "7"
+    },
+    {
+      "name": "Harsh Stimulants",
+      "level": "8"
+    },
+    {
+      "name": "Jet Propulsion",
+      "level": "8"
+    },
+    {
+      "name": "Chimeric Formula",
+      "level": "9"
+    },
+    {
+      "name": "Lethal Injection",
+      "level": "9"
+    }
+  ]
+}

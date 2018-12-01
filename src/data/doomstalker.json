@@ -1,0 +1,130 @@
+{
+  "type": "doomstalker",
+  "numOfCards": 12,
+  "cards": [
+    {
+      "name": "A moment's Peace",
+      "level": "1"
+    },
+    {
+      "name": "Crippling Noose",
+      "level": "1"
+    },
+    {
+      "name": "Detonation",
+      "level": "1"
+    },
+    {
+      "name": "Felling Swoop",
+      "level": "1"
+    },
+    {
+      "name": "Foot Snare",
+      "level": "1"
+    },
+    {
+      "name": "Frightening Curse",
+      "level": "1"
+    },
+    {
+      "name": "Multi-Pronged Assault",
+      "level": "1"
+    },
+    {
+      "name": "Race to the Grave",
+      "level": "1"
+    },
+    {
+      "name": "Rain of Arrows",
+      "level": "1"
+    },
+    {
+      "name": "Solid Bow",
+      "level": "1"
+    },
+    {
+      "name": "Swift Trickery",
+      "level": "1"
+    },
+    {
+      "name": "Vital Charge",
+      "level": "1"
+    },
+    {
+      "name": "Fresh Kill",
+      "level": "X"
+    },
+    {
+      "name": "Sap Life",
+      "level": "X"
+    },
+    {
+      "name": "The Hunt Begins",
+      "level": "X"
+    },
+    {
+      "name": "Expose",
+      "level": "2"
+    },
+    {
+      "name": "Relentless Offensive",
+      "level": "2"
+    },
+    {
+      "name": "Darkened Skies",
+      "level": "3"
+    },
+    {
+      "name": "Press the Attack",
+      "level": "3"
+    },
+    {
+      "name": "Flight of Flame",
+      "level": "4"
+    },
+    {
+      "name": "Singular Focus",
+      "level": "4"
+    },
+    {
+      "name": "Inescapable Fate",
+      "level": "5"
+    },
+    {
+      "name": "Wild Command",
+      "level": "5"
+    },
+    {
+      "name": "Camouflage",
+      "level": "6"
+    },
+    {
+      "name": "Nature's Hunger",
+      "level": "6"
+    },
+    {
+      "name": "Crashing Wave",
+      "level": "7"
+    },
+    {
+      "name": "Impending End",
+      "level": "7"
+    },
+    {
+      "name": "Feral Instincts",
+      "level": "8"
+    },
+    {
+      "name": "Rising Momentum",
+      "level": "8"
+    },
+    {
+      "name": "Lead to Slaughter",
+      "level": "9"
+    },
+    {
+      "name": "Predator and Prey",
+      "level": "9"
+    }
+  ]
+}

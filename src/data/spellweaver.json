@@ -1,0 +1,114 @@
+{
+  "type": "spellweaver",
+  "numOfCards": 8,
+  "cards": [
+    {
+      "name": "Fire Orbs",
+      "level": "1"
+    },
+    {
+      "name": "Flame Strike",
+      "level": "1"
+    },
+    {
+      "name": "Freezing Nova",
+      "level": "1"
+    },
+    {
+      "name": "Frost Armor",
+      "level": "1"
+    },
+    {
+      "name": "Impaling Eruption",
+      "level": "1"
+    },
+    {
+      "name": "Mana Bolt",
+      "level": "1"
+    },
+    {
+      "name": "Reviving Ether",
+      "level": "1"
+    },
+    {
+      "name": "Ride the Wind",
+      "level": "1"
+    },
+    {
+      "name": "Aid from the Ether",
+      "level": "X"
+    },
+    {
+      "name": "Crackling Air",
+      "level": "X"
+    },
+    {
+      "name": "Hardened Spikes",
+      "level": "X"
+    },
+    {
+      "name": "Flashing Burst",
+      "level": "2"
+    },
+    {
+      "name": "Icy Blast",
+      "level": "2"
+    },
+    {
+      "name": "Cold Fire",
+      "level": "3"
+    },
+    {
+      "name": "Elemental Aid",
+      "level": "3"
+    },
+    {
+      "name": "Forked Beam",
+      "level": "4"
+    },
+    {
+      "name": "Spirit of Doom",
+      "level": "4"
+    },
+    {
+      "name": "Chromatic Explosion",
+      "level": "5"
+    },
+    {
+      "name": "Engulfed in Flames",
+      "level": "5"
+    },
+    {
+      "name": "Frozen Night",
+      "level": "6"
+    },
+    {
+      "name": "Living Torch",
+      "level": "6"
+    },
+    {
+      "name": "Stone Fists",
+      "level": "7"
+    },
+    {
+      "name": "Twin Restoration",
+      "level": "7"
+    },
+    {
+      "name": "Cold Front",
+      "level": "8"
+    },
+    {
+      "name": "Zephyr Wings",
+      "level": "8"
+    },
+    {
+      "name": "Black Hole",
+      "level": "9"
+    },
+    {
+      "name": "Inferno",
+      "level": "9"
+    }
+  ]
+}

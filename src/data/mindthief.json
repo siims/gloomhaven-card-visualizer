@@ -1,0 +1,122 @@
+{
+  "type": "mindthief",
+  "numOfCards": 10,
+  "cards": [
+    {
+      "name": "Empathetic Assault",
+      "level": "1"
+    },
+    {
+      "name": "Fearsome Blade",
+      "level": "1"
+    },
+    {
+      "name": "Feedback Loop",
+      "level": "1"
+    },
+    {
+      "name": "Gnawing Horde",
+      "level": "1"
+    },
+    {
+      "name": "Into the Night",
+      "level": "1"
+    },
+    {
+      "name": "Parasitic Influence",
+      "level": "1"
+    },
+    {
+      "name": "Perverse Edge",
+      "level": "1"
+    },
+    {
+      "name": "Scurry",
+      "level": "1"
+    },
+    {
+      "name": "Submissive Affliction",
+      "level": "1"
+    },
+    {
+      "name": "The Mind's Weakness",
+      "level": "1"
+    },
+    {
+      "name": "Frigid Apparition",
+      "level": "X"
+    },
+    {
+      "name": "Possession",
+      "level": "X"
+    },
+    {
+      "name": "Withering Claw",
+      "level": "X"
+    },
+    {
+      "name": "Hostile Takeover",
+      "level": "2"
+    },
+    {
+      "name": "Wretched Creature",
+      "level": "2"
+    },
+    {
+      "name": "Brain Leech",
+      "level": "3"
+    },
+    {
+      "name": "Silent Scream",
+      "level": "3"
+    },
+    {
+      "name": "Cranium Overload",
+      "level": "4"
+    },
+    {
+      "name": "Pilfer",
+      "level": "4"
+    },
+    {
+      "name": "Frozen Mind",
+      "level": "5"
+    },
+    {
+      "name": "Mass Hysteria",
+      "level": "5"
+    },
+    {
+      "name": "Corrupting Embrace",
+      "level": "6"
+    },
+    {
+      "name": "Dark Frenzy",
+      "level": "6"
+    },
+    {
+      "name": "Psychic Projection",
+      "level": "7"
+    },
+    {
+      "name": "Vicious Blood",
+      "level": "7"
+    },
+    {
+      "name": "Domination",
+      "level": "8"
+    },
+    {
+      "name": "Shared Nightmare",
+      "level": "8"
+    },
+    {
+      "name": "Many as One",
+      "level": "9"
+    },
+    {
+      "name": "Phantasmal Killer",
+      "level": "9"
+    }
+  ]
+}
